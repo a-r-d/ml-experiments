@@ -12,3 +12,18 @@ sudo pip install scipy
 sudo pip install scikit-learn
 sudo pip install pandas
 ```
+
+## Now, we will use iPython and jupyter
+
+```
+python3 -m pip install --upgrade pip
+python3 -m pip install jupyter
+
+python3 -m pip install matplotlib numpy scipy pandas seaborn sklearn
+```
+
+Now. start the jupyter notebook server
+
+```
+jupyter notebook
+``
