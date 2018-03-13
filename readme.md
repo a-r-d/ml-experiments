@@ -15,15 +15,37 @@ sudo pip install pandas
 
 ## Now, we will use iPython and jupyter
 
-```
+```bash
 python3 -m pip install --upgrade pip
 python3 -m pip install jupyter
 
 python3 -m pip install matplotlib numpy scipy pandas seaborn sklearn
+
+# natural language toolkit
+python3 -m pip install nltk
 ```
 
-Now. start the jupyter notebook server
+Now, start the jupyter notebook server
 
-```
+```bash
 jupyter notebook
-``
+```
+
+## Natural language work
+
+Note that nltk must download the corpus data. Call ```nltk.download()``` and grab all of the packages.
+
+Make sure it is working like so:
+```python
+from nltk.corpus import stopwords
+
+stopwords.words('english')
+```
+
+Stemming:
+```python
+from nlkt.stem.snowball import SnowballStemmer
+
+stemmer = SnowballStemmer("english")
+stemmer.stem("responsiveness")
+```
